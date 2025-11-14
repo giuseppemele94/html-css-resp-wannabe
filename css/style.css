@@ -129,6 +129,15 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
+@media screen and (max-width: 1160px) {
+    .container {
+        width: 100%;        /* invece di 1140px fissi */
+        max-width: 1140px;  /* comunque non va oltre il design base */
+        padding: 0 30px;   
+    }
+}
+
+
 /* ============================
    TABLET 768px
    ============================ */
@@ -138,18 +147,67 @@ img {
     /* Container più stretto */
     .container {
         width: 100%;
-        max-width: 100%;
         padding: 0 30px;
         margin: 0 auto;
     }
 }
 
-/* da 769px a 1140px per sistemare lo scroll fino a 1140px*/
-@media screen and (min-width: 769px) and (max-width: 1140px) {
-    .container {
-        width: 100%;        /* invece di 1140px fissi */
-        max-width: 1140px;  /* comunque non va oltre il design base */
-        padding: 0 30px;
-        margin: 0 auto;
+/* ============================
+   MOBILE (max-width: 480px)
+   ============================ */
+@media screen and (max-width: 480px) {
+   
+   
+    /* Sezione lezioni */
+   .lessons  {
+        margin-bottom: 20px;
+   }
+
+   .lessons .row {
+        flex-direction: column;
+        align-items: center; 
+        gap: 70px;
+   }
+
+   .lessons .col {
+     width: 100%;
     }
+
+    /* Sezione come funziona */
+    .steps .row {
+        flex-direction: column ;
+        align-items: center;
+        gap : 70px; 
+    }
+
+    .steps .col {
+        width: 100%; 
+    }
+
+    .steps {
+        margin: 0; 
+    }
+
+    
+    /* Sezione Perchè Boolean Academy */
+    .why-us .row {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .why-us .col {
+        width: 100%;
+    }
+
+    .why-us  {
+        background-color: black;
+        padding-top: 40px;
+        margin: 0;
+    }
+
+    .why-us img {
+        padding-bottom: 40px;  
+    }
+
+
 }

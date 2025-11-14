@@ -111,6 +111,7 @@ img {
 .why-us {
     margin-bottom: 3rem;
 }
+
 .why-us .col-left {
     width: 40%;
 }
@@ -127,3 +128,28 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+
+/* ============================
+   TABLET 768px
+   ============================ */
+
+@media screen and (max-width:768px) {
+
+    /* Container più stretto */
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 30px;
+        margin: 0 auto;
+    }
+}
+
+/* da 769px a 1140px per sistemare lo scroll fino a 1140px*/
+@media screen and (min-width: 769px) and (max-width: 1140px) {
+    .container {
+        width: 100%;        /* invece di 1140px fissi */
+        max-width: 1140px;  /* comunque non va oltre il design base */
+        padding: 0 30px;
+        margin: 0 auto;
+    }
+}
